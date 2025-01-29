@@ -5,24 +5,24 @@ import { Link } from 'react-router-dom';
 const SeleccionServicios = () => {
   return (
     <div className="servicios-container">
-      <div className="servicio-boton">
-        <Link to="/servicio1">
-          Servicio 1
+      <div>
+        <Link className="servicio-boton" to="/servicio1">
+          Gestion de turnos
         </Link>
       </div>
-      <div className="servicio-boton">
-        <Link to="/servicio2">
-          Servicio 2
+      <div>
+        <Link className="servicio-boton" to="/servicio2">
+          Pacientes
         </Link>
       </div>
-      <div className="servicio-boton">
-        <Link to="/servicio3">
-          Servicio 3
+      <div>
+        <Link className="servicio-boton" to="/servicio3">
+          Servicios
         </Link>
       </div>
-      <div className="servicio-boton">
-        <Link to="/servicio4">
-          Servicio 4
+      <div>
+        <Link className="servicio-boton" to="/servicio4">
+          Obras sociales
         </Link>
       </div>
     </div>
