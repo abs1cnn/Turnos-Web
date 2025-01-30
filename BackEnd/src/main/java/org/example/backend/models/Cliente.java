@@ -32,4 +32,6 @@ public class Cliente {
     @ManyToOne
     @JoinColumn(name = "id_obra_social", nullable = false)
     private ObraSocial obraSocial;
+
 }
+
