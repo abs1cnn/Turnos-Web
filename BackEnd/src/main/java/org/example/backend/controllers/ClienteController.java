@@ -1,5 +1,6 @@
 package org.example.backend.controllers;
 
+import jakarta.transaction.Transactional;
 import org.example.backend.models.Cliente;
 import org.example.backend.services.ClienteService;
 
@@ -23,26 +24,5 @@ public class ClienteController {
         return clienteService.listarClientes();
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Cliente> obtenerCliente(@PathVariable Long id) {
-        Optional<Cliente> cliente = clienteService.obtenerClientePorId(id);
-        return cliente.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
-    }
 
-    @PostMapping
-    public Cliente crearCliente(@RequestBody Cliente cliente) {
-        return clienteService.guardarCliente(cliente);
-    }
-
-    @PostMapping("/con-obra-social/{idObraSocial}")
-    public ResponseEntity<Cliente> crearClienteConObraSocial(@RequestBody Cliente cliente, @PathVariable Long idObraSocial) {
-        Cliente nuevoCliente = clienteService.guardarClienteConObraSocial(cliente, idObraSocial);
-        return ResponseEntity.ok(nuevoCliente);
-    }
-
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminarCliente(@PathVariable Long id) {
-        clienteService.eliminarCliente(id);
-        return ResponseEntity.noContent().build();
-    }
 }

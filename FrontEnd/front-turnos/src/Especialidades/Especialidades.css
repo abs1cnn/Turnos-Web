@@ -1,0 +1,51 @@
+/* Estilo para la tabla */
+.tabla-especialidades {
+  width: 80%; /* Ajusta el ancho de la tabla */
+  margin: 20px auto; /* Centra la tabla en la página */
+  border-collapse: collapse; /* Elimina los espacios entre bordes de celdas */
+}
+
+/* Estilo para los encabezados de la tabla */
+.tabla-especialidades th {
+  color: #fff; /* Color blanco para el texto */
+  background-color: #2c9281; /* Color de fondo verde */
+  padding: 12px 20px; /* Relleno de las celdas */
+  text-align: left; /* Alineación del texto a la izquierda */
+  font-size: 18px; /* Tamaño de fuente */
+  border: 1px solid #ddd; /* Borde de las celdas */
+}
+
+/* Estilo para las celdas de la tabla */
+.tabla-especialidades td {
+  padding: 12px 20px; /* Relleno de las celdas */
+  text-align: left; /* Alineación del texto a la izquierda */
+  border: 1px solid #ddd; /* Borde de las celdas */
+}
+
+/* Estilo para las filas alternas */
+.tabla-especialidades tr:nth-child(even) {
+  background-color: #a6dad1; /* Color de fondo alterno */
+  color: #14423b;
+}
+
+/* Estilo al pasar el ratón por encima de las filas */
+.tabla-especialidades tr:hover {
+  background-color: #ddd; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para las celdas con texto en negrita */
+.tabla-especialidades th,
+.tabla-especialidades td {
+  font-weight: normal; /* Evitar negritas por defecto */
+}
+
+/* Estilo para las celdas de las filas de la tabla */
+.tabla-especialidades td {
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Agregar bordes redondeados a la tabla */
+.tabla-especialidades {
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Evitar que el contenido se salga de los bordes */
+}

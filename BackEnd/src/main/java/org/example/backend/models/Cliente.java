@@ -30,6 +30,7 @@ public class Cliente {
 
     // Relación con ObraSocial
     @ManyToOne
+    // van los nombres de los atributos de la tabla correspondiente, no los atributos de otra tabla que se relaciona
     @JoinColumn(name = "id_obra_social", nullable = false)
     private ObraSocial obraSocial;
 

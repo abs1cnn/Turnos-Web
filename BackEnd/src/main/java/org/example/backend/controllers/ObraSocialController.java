@@ -23,25 +23,4 @@ public class ObraSocialController {
         return obraSocialService.obtenerTodas();
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<ObraSocial> obtenerPorId(@PathVariable Long id) {
-        return obraSocialService.obtenerPorId(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
-    }
-
-    @PostMapping
-    public ResponseEntity<ObraSocial> crearObraSocial(@RequestBody ObraSocial obraSocial) {
-        ObraSocial nuevaObra = obraSocialService.guardar(obraSocial);
-        return ResponseEntity.ok(nuevaObra);
-    }
-
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminarObraSocial(@PathVariable Long id) {
-        if (obraSocialService.obtenerPorId(id).isPresent()) {
-            obraSocialService.eliminar(id);
-            return ResponseEntity.noContent().build();
-        }
-        return ResponseEntity.notFound().build();
-    }
 }

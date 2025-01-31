@@ -16,8 +16,8 @@ const SeleccionServicios = () => {
         </Link>
       </div>
       <div>
-        <Link className="servicio-boton" to="/servicio3">
-          Servicios
+        <Link className="servicio-boton" to="/Especialidades">
+          Especialidades
         </Link>
       </div>
       <div>
