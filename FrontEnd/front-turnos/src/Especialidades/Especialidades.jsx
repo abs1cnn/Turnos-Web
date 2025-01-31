@@ -10,9 +10,7 @@ const Especialidades = () => {
     // Función para obtener especialidades desde el backend
     const fetchEspecialidades = async () => {
       try {
-        const response = await axios.get("http://localhost:8881/especialidades", { withCredentials: true })
-        .then(response => console.log(response.data))
-        .catch(error => console.error("Error:", error));
+        const response = await axios.get('http://localhost:8881/especialidades');  // URL del backend
         setEspecialidades(response.data);  // Guardar los datos en el estado
       } catch (err) {
         setError('Error al cargar las especialidades');  // Manejar errores si la solicitud falla
