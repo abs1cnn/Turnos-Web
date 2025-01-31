@@ -9,6 +9,7 @@ MENU LATERAL
 ![image](https://github.com/user-attachments/assets/4be84b1e-688b-4aa6-a7b5-ea28ddc6a7bf)
 
 VENTANA OBRAS SOCIALES
+![image](https://github.com/user-attachments/assets/55b6db95-d3ff-4e1c-8450-3136010e199f)
 
 FALTA VENTANA DE INICIO, CORRESPONDIENTE A LOGGUIN
 
