@@ -32,11 +32,6 @@ const Especialidades = () => {
             <th>Especialidad</th>
             <th>Descripción</th>
           </tr>
-          <tr>
-            <td>1</td>
-            <td>Odontologo</td>
-            <td>Doctor dientes + minero de caries</td>
-          </tr>
         </thead>
         <tbody>
           {especialidades.length === 0 ? (
