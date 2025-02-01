@@ -20,11 +20,20 @@
   padding: 12px 20px; /* Relleno de las celdas */
   text-align: left; /* Alineación del texto a la izquierda */
   border: 1px solid #ddd; /* Borde de las celdas */
+  background-color: #94cac1;
+  color: #14423b;
+}
+
+button {
+  background-color: #257c6f;
+  color: white;
+  border-color: #94cac1;
+  padding: 5px 40px;
 }
 
 /* Estilo para las filas alternas */
 .tabla-especialidades tr:nth-child(even) {
-  background-color: #a6dad1; /* Color de fondo alterno */
+  background-color: #589187; /* Color de fondo alterno */
   color: #14423b;
 }
 
