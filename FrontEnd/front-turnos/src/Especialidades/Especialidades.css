@@ -58,3 +58,21 @@ button {
   border-radius: 10px; /* Bordes redondeados */
   overflow: hidden; /* Evitar que el contenido se salga de los bordes */
 }
+
+.new-esp {
+  padding: 10px;
+  background:teal;
+}
+
+button{
+  color: black;
+}
+
+#id-nom-esp, #id-desc-esp{
+  background: #94cac1;
+  padding: 12px 60px;
+  color: black;
+  display: block;
+  margin: 10px;
+}
+
