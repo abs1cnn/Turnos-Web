@@ -76,3 +76,8 @@ button{
   margin: 10px;
 }
 
+#id-input-busqueda{
+  padding: 12px 40px;
+  background-color: #9bd3c9;
+  color: #14423b;
+}

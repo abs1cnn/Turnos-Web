@@ -67,7 +67,7 @@ const EspecialidadesListado = () => {
           {/* Campo para buscar por nombre */}
           <div className="obra-social-container">
             <label>Buscar por nombre:</label>
-            <input
+            <input id="id-input-busqueda"
               type="text"
               value={filtroNombre}
               onChange={(e) => setFiltroNombre(e.target.value)}
